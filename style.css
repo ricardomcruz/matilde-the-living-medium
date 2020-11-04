@@ -1,0 +1,610 @@
+/* 
+reset de css
+
+http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, main, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, main, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* o meu código */
+
+body {
+    font-family: monospace;
+    overflow-x:hidden;
+}
+
+main {
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+main span {
+    color: blue;
+}
+
+main span:hover {
+    color: white;
+}
+
+.title, .subtitle {
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    border-right: 1px solid black;
+}
+
+.title {
+    width: 20vw;
+    line-height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+   
+}
+
+.subtitle {
+    width: 80vw;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 35px;
+}
+
+.links {
+    padding-right: 20px;
+
+}
+
+.subtitle:hover {
+    background-color: blue;
+}
+
+.subtitle:hover p{
+    color: white;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+}
+
+.links a:visited {
+    color: black;
+}
+
+.links a:hover {
+    color: white;
+}
+
+
+
+
+* {
+    box-sizing: border-box !important;
+}
+
+.main {
+    width: 20vw;
+}
+
+
+.body {
+    background-color: pink!important;
+}
+
+.body * {
+    background-color: white;
+}
+
+
+/*menu*/
+
+/*seta,fixar menu, sobras dos pixeis*/
+
+.mainnav {
+    margin: 0 auto}
+
+li {
+    list-style: none;
+    width:20vw;
+    padding-left: 20px;
+
+}
+
+
+
+.dropdown-title {
+        height: 35px;
+        padding: 0 0 0 20px;
+        line-height: 35px;
+        position: relative;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+}
+
+
+
+
+.dropdown {
+    color: #000;
+    opacity: 1;
+    position: relative;
+    height: 100%;
+}
+
+.dropdown:hover {
+    background-color: blue;
+    color: #fff;
+    opacity: 1;
+    transition: ease-out .35s;
+    -moz-transition: ease-out .35s;
+    -webkit-transition: ease-out .35s;
+}
+
+.list-d li:hover {
+    background-color: blue;
+    color: #fff;
+    opacity: 1;
+    transition: ease-out .35s;
+    -moz-transition: ease-out .35s;
+    -webkit-transition: ease-out .35s;
+}
+
+.dropdown::before {
+    content: '';
+    right: 0;
+    bottom: 0;
+    height: 8px;
+    width: 8px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-image: url(img/seta.svg);
+    position: absolute;
+    z-index: 2;
+}
+
+.drop-a:hover .list-a {
+    visibility: visible;
+}
+
+
+.list-a {
+    visibility: hidden;
+    position: absolute;
+    top: 35px;
+}
+
+.list-a:hover {
+    background-color: blue;
+    color: #fff;
+    opacity: 1;
+    transition: ease-out .35s;
+    -moz-transition: ease-out .35s;
+    -webkit-transition: ease-out .35s;
+}
+
+
+
+
+
+.dropable-list {
+    color: black;
+    left: -1px;
+    box-sizing: border-box;
+    position: absolute;
+    right: -1px;
+    padding-right: 20px;
+    padding-top: 20px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.dropdown-text {
+    box-sizing: border-box;
+    line-height: 23px;
+    width: 100%;
+}
+
+
+
+.dropdown-text {
+    box-sizing: border-box;
+    line-height: 23px;
+    width: 100%;
+}
+
+
+
+.dropdown-text a {
+    color: blue;
+    text-decoration: none;
+}
+
+.dropdown-single {
+    height: 25px;
+}
+
+.dropdown-single {
+    width: 20vw;
+    padding-right: 20px;
+
+}
+
+.dropdown-single::before {
+    content: '';
+    right: 0;
+    bottom: 0;
+    height: 8px;
+    width: 8px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-image: url(img/seta.svg);
+    position: absolute;
+    z-index: 2;
+}
+
+.dropdown-single::after {
+    content: '';
+    right: 0;
+    top: -100%;
+    bottom: 0;
+    height: 600%;
+    position: absolute;
+    width: 100%;
+} 
+
+.drop-b {
+    position: relative;
+}
+
+.list-b {
+    left: calc(20vw + 20px);
+    width: 100%;
+    top: -11px;
+    position: absolute;
+    visibility: hidden;
+
+}
+
+.drop-b:hover .list-b{
+    visibility: visible;
+}
+
+
+
+.dropable-side-list {
+    left: calc(20vw - 2px);
+    width: 100%;
+    top: -11px;
+    position: absolute;
+    visibility: hidden;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.dropable-side-list {
+       border-left: 1px solid black;
+}
+
+
+.dropable-side-title {
+    left: calc(20vw - 2px);
+    width: calc(20vw '' 2px);
+    top: -1px;
+    position: absolute;
+    visibility: hidden;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    visibility: hidden;
+
+}
+
+
+.dropable-side-list li{
+    border-bottom: 1px solid black;
+}
+
+.list-b .dropdown {
+    height: calc(5 * 35px);
+    line-height: calc(5 * 35px);
+}
+
+.list-d li, .list-e li {
+    box-sizing: border-box;
+    height: 35px;
+    line-height: 35px;
+}
+
+
+.drop-c .dropable-side-list, .drop-d .dropable-side-list, .drop-e .dropable-side-list {
+    top: -1px;
+    visibility: hidden;
+}
+
+.drop-c:hover .list-c{
+    visibility: visible;
+}
+
+.drop-d:hover .list-d{
+    visibility: visible;
+}
+
+.drop-e:hover .list-e{
+    visibility: visible;
+}
+
+.list-c .dropdown, .list-d .dropdown, .list-e .dropdown {
+    color: black;
+    height: 35px;
+    line-height: 35px;
+}
+
+
+div .reference {
+    line-height: 35px;
+    color: black;
+    padding-left: 20px;
+    border-bottom: 1px solid black;
+}
+.reference:hover {
+    color: white;
+}
+
+
+
+
+
+.drop-f:hover .list-f {
+    visibility: visible !important;
+}
+
+.drop-g:hover .list-g {
+    visibility: visible !important;
+}
+
+.drop-h:hover .list-h {
+    visibility: visible !important;
+}
+
+.drop-i:hover .list-i {
+    visibility: visible !important;
+}
+
+.drop-j:hover .list-j {
+    visibility: visible !important;
+}
+
+.drop-k:hover .list-k {
+    visibility: visible !important;
+}
+
+.drop-l:hover .list-l {
+    visibility: visible !important;
+}
+
+.drop-m:hover .list-m {
+    visibility: visible !important;
+}
+
+.drop-n:hover .list-n {
+    visibility: visible !important;
+}
+
+.drop-o:hover .list-o {
+    visibility: visible !important;
+}
+
+.drop-p:hover .list-p {
+    visibility: visible !important;
+}
+
+.drop-q:hover .list-q {
+    visibility: visible !important;
+}
+
+.drop-r:hover .list-r {
+    visibility: visible !important;
+}
+
+.drop-s:hover .list-s {
+    visibility: visible !important;
+}
+
+.drop-t:hover .list-t {
+    visibility: visible !important;
+}
+
+.reference .reference:hover {
+    color: black;
+}
+
+.status-title {
+   border-bottom: 1px solid black;
+   color: black;
+   padding-left: 20px;
+   
+}
+
+.status-title:hover {
+    background-color: blue;
+    color: #fff;
+    opacity: 1;
+    transition: ease-out .35s;
+   
+}
+
+.list-c li:hover .dropable-side-title li {
+    visibility: visible;
+}
+
+.drop-f:hover .dropable-side-title .reference {
+    visibility: visible !important;
+}
+
+.list-c li {
+    box-sizing: border-box !important; 
+}
+
+.dropable-side-list .reference {
+    line-height: 1,1em;
+}
+
+.dropable-side-list .reference li {
+    background-color: blue;
+    color: #fff;
+    opacity: 1;
+    transition: ease-out .35s;
+    -moz-transition: ease-out .35s;
+    -webkit-transition: ease-out .35s;
+    line-height: 1,1em;
+}
+
+
+.reference-title {
+    width: 40vw;
+    min-height: 35px !important;
+    height: auto !important;
+    line-height: 20px;
+}
+
+.dropable-side-list .reference-title:hover {
+    background-color: blue;
+    color: #fff;
+    opacity: 1;
+    transition: ease-out .35s;
+    -moz-transition: ease-out .35s;
+    -webkit-transition: ease-out .35s;
+    line-height: 1,1em;
+}
+
+
+.reference-image img{
+    width: calc(100% - 20px);
+    margin-top: 10px;
+}
+
+.reference-image p{
+    margin-bottom: 20px;
+    padding-right: 20px;
+    line-height: 1.8em;
+}
+
+
+.dropable-side-list .reference-image {
+    display: none;
+}
+
+
+ #transcription:hover .reference-image {
+    display: block !important;
+}
+
+
+#library:hover .reference-image {
+    display: block !important;
+}
+
+#memex:hover .reference-image {
+    display: block !important;
+}
+
+#remix:hover .reference-image {
+    display: block !important;
+}
+
+#racter:hover .reference-image {
+    display: block !important;
+}
+
+#klavier:hover .reference-image {
+    display: block !important;
+}
+
+#videoplace:hover .reference-image {
+    display: block !important;
+}
+
+#untitled:hover .reference-image {
+    display: block !important;
+}
+
+#marclay:hover .reference-image {
+    display: block !important;
+}
+
+#gordon:hover .reference-image {
+    display: block !important;
+}
+
+#victorian:hover .reference-image {
+    display: block !important;
+}
+
+#berners-lee:hover .reference-image {
+    display: block !important;
+}
+
+#aspen:hover .reference-image {
+    display: block !important;
+}
+
+#tree:hover .reference-image {
+    display: block !important;
+}
+
+#examiner:hover .reference-image {
+    display: block !important;
+}
+
